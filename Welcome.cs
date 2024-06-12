@@ -35,5 +35,12 @@ namespace UnknownSystem
         {
 
         }
+
+        private void loginClick(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+        }
     }
 }

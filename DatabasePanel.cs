@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace UnknownSystem
 {
-    public partial class Database : Form
+    public partial class DatabasePanel : UserControl
     {
-        public Database()
+        public DatabasePanel()
         {
             InitializeComponent();
         }
 
-        private void Database_Load(object sender, EventArgs e)
+        private void DatabasePanel_Load(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=PANZERKAMPFWAGE\SQLEXPRESS;Initial Catalog=ALibrarySystem;Integrated Security=True");
 
@@ -35,9 +35,7 @@ namespace UnknownSystem
 
         private void backClickB(object sender, EventArgs e)
         {
-            Welcome welc = new Welcome();
-            welc.Show();
-            this.Hide();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
